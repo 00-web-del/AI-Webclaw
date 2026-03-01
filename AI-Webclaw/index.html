@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Webclaw | AI资讯站</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- AI科技感背景层 -->
+    <div class="tech-particles"></div>
+    <div class="data-flow"></div>
+    <div class="tech-icons"></div>
+
+    <!-- 头部导航 -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <i data-lucide="bot"></i>
+                <span>AI-Webclaw</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#news">AI新闻</a></li>
+                <li><a href="#pm-section">产品经理</a></li>
+                <li><a href="#">资源</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i data-lucide="sun" id="themeIcon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 英雄区 -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">AI-Webclaw 资讯站</h1>
+            <p class="hero-description">
+                专为AI从业者和产品经理打造的一站式资讯平台，汇聚最新行业动态、产品洞察与实用工具
+            </p>
+            <div class="hero-buttons">
+                <a href="#news" class="btn btn-primary">开始探索</a>
+                <a href="#subscribe" class="btn btn-outline">订阅更新</a>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <i data-lucide="sparkles" class="sparkle-icon"></i>
+        </div>
+    </section>
+
+    <!-- 分类浏览 -->
+    <section class="categories">
+        <div class="container">
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i data-lucide="newspaper"></i>
+                    </div>
+                    <h3>行业动态</h3>
+                    <p>追踪AI行业最新发展趋势</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i data-lucide="rocket"></i>
+                    </div>
+                    <h3>产品更新</h3>
+                    <p>了解热门产品功能迭代</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i data-lucide="wrench"></i>
+                    </div>
+                    <h3>工具推荐</h3>
+                    <p>提升效率的AI工具合集</p>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="category-icon">
+                        <i data-lucide="message-circle"></i>
+                    </div>
+                    <h3>观点访谈</h3>
+                    <p>行业大咖深度对话</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 搜索框 -->
+    <div class="search-bar">
+        <div class="search-container">
+            <i data-lucide="search"></i>
+            <input type="text" class="search-input" id="searchInput" placeholder="搜索新闻、产品、工具...">
+        </div>
+    </div>
+
+    <!-- 产品经理专属板块 -->
+    <section class="main-container" id="pm-section">
+        <main class="content">
+            <div class="pm-section">
+                <div class="pm-section-header">
+                    <div class="pm-section-title">
+                        <i data-lucide="briefcase"></i>
+                        产品经理专属
+                    </div>
+                    <div class="pm-tabs">
+                        <button class="pm-tab active" data-tab="products">产品发布</button>
+                        <button class="pm-tab" data-tab="tools">工具推荐</button>
+                        <button class="pm-tab" data-tab="reviews">每周点评</button>
+                    </div>
+                </div>
+                <div class="pm-grid" id="pmGrid">
+                    <div class="pm-card" data-tab="products">
+                        <span class="pm-badge">新发布</span>
+                        <h4>OpenAI o1-preview 正式上线</h4>
+                        <p>支持更长上下文，推理能力提升50%</p>
+                    </div>
+                    <div class="pm-card" data-tab="products">
+                        <span class="pm-badge">更新</span>
+                        <h4>Claude 4.1 发布新功能</h4>
+                        <p>新增代码分析、文档理解能力</p>
+                    </div>
+                    <div class="pm-card" data-tab="products">
+                        <span class="pm-badge">预告</span>
+                        <h4>GPT-5 即将推出</h4>
+                        <p>多模态能力全面升级，预计Q3发布</p>
+                    </div>
+                    <div class="pm-card" data-tab="tools">
+                        <span class="pm-badge">推荐</span>
+                        <h4>Figma AI 插件合集</h4>
+                        <p>一键生成原型图，提升设计效率</p>
+                    </div>
+                    <div class="pm-card" data-tab="tools">
+                        <span class="pm-badge">工具</span>
+                        <h4>Notion AI 写作助手</h4>
+                        <p>智能生成文档、会议纪要</p>
+                    </div>
+                    <div class="pm-card" data-tab="tools">
+                        <span class="pm-badge">效率</span>
+                        <h4>Maze 用户测试工具</h4>
+                        <p>AI驱动的用户行为分析</p>
+                    </div>
+                    <div class="pm-card" data-tab="reviews">
+                        <span class="pm-badge">点评</span>
+                        <h4>本周：ChatGPT产品分析</h4>
+                        <p>从产品角度看GPT Store的设计思路</p>
+                    </div>
+                    <div class="pm-card" data-tab="reviews">
+                        <span class="pm-badge">深度</span>
+                        <h4>AI Agent产品化思考</h4>
+                        <p>从技术demo到商业产品的关键路径</p>
+                    </div>
+                    <div class="pm-card" data-tab="reviews">
+                        <span class="pm-badge">趋势</span>
+                        <h4>2026年AI产品趋势预测</h4>
+                        <p>多模态、个性化、端侧化</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 今日热点 -->
+            <section class="section" id="news">
+                <div class="section-header">
+                    <h2><i data-lucide="zap"></i> 今日热点</h2>
+                    <a href="#" class="view-more">查看更多 <i data-lucide="chevron-right"></i></a>
+                </div>
+                <div class="news-grid" id="newsGrid">
+                    <article class="news-card" data-id="1" data-category="行业动态">
+                        <div class="news-image" data-style="neural">
+                            <div class="news-image-overlay"></div>
+                            <div class="news-badge">热门</div>
+                            <div class="news-actions">
+                                <button class="news-action-btn favorite-btn" data-id="1"><i data-lucide="heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">行业动态</span>
+                            <h3>OpenAI发布新一代推理模型，编程能力大幅提升</h3>
+                            <p class="news-excerpt">全新模型在代码生成、调试和优化方面表现卓越，开发者生产力将迎来革命性提升...</p>
+                            <div class="news-meta">
+                                <span><i data-lucide="clock"></i> 2小时前</span>
+                                <span><i data-lucide="eye"></i> 3.2k</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news-card" data-id="2" data-category="产品更新">
+                        <div class="news-image" data-style="dataflow">
+                            <div class="news-image-overlay"></div>
+                            <div class="news-badge">新发布</div>
+                            <div class="news-actions">
+                                <button class="news-action-btn favorite-btn" data-id="2"><i data-lucide="heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">产品更新</span>
+                            <h3>Google Gemini 2.0全面开放，支持多模态实时交互</h3>
+                            <p class="news-excerpt">Gemini 2.0新增视频通话、实时语音对话等功能，多模态体验再次升级...</p>
+                            <div class="news-meta">
+                                <span><i data-lucide="clock"></i> 4小时前</span>
+                                <span><i data-lucide="eye"></i> 2.8k</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news-card" data-id="3" data-category="工具推荐">
+                        <div class="news-image" data-style="particles">
+                            <div class="news-image-overlay"></div>
+                            <div class="news-badge">推荐</div>
+                            <div class="news-actions">
+                                <button class="news-action-btn favorite-btn" data-id="3"><i data-lucide="heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">工具推荐</span>
+                            <h3>AI产品经理必备：7个提效工具推荐</h3>
+                            <p class="news-excerpt">从需求分析到原型设计，这些AI工具将让你的工作效率翻倍...</p>
+                            <div class="news-meta">
+                                <span><i data-lucide="clock"></i> 6小时前</span>
+                                <span><i data-lucide="eye"></i> 1.9k</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news-card" data-id="4" data-category="行业动态">
+                        <div class="news-image" data-style="circuit">
+                            <div class="news-image-overlay"></div>
+                            <div class="news-badge">研究</div>
+                            <div class="news-actions">
+                                <button class="news-action-btn favorite-btn" data-id="4"><i data-lucide="heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">行业动态</span>
+                            <h3>Anthropic研究：大模型推理成本有望降低80%</h3>
+                            <p class="news-excerpt">新技术突破让企业大规模部署AI成为可能，应用门槛大幅降低...</p>
+                            <div class="news-meta">
+                                <span><i data-lucide="clock"></i> 8小时前</span>
+                                <span><i data-lucide="eye"></i> 2.4k</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news-card" data-id="5" data-category="产品更新">
+                        <div class="news-image" data-style="waveform">
+                            <div class="news-image-overlay"></div>
+                            <div class="news-badge">预告</div>
+                            <div class="news-actions">
+                                <button class="news-action-btn favorite-btn" data-id="5"><i data-lucide="heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">产品更新</span>
+                            <h3>Midjourney V7即将发布，主打3D生成能力</h3>
+                            <p class="news-excerpt">新一代引擎支持直接生成3D模型，创作者生态将迎来重大变革...</p>
+                            <div class="news-meta">
+                                <span><i data-lucide="clock"></i> 10小时前</span>
+                                <span><i data-lucide="eye"></i> 1.7k</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="news-card" data-id="6" data-category="产品更新">
+                        <div class="news-image" data-style="enterprise">
+                            <div class="news-image-overlay"></div>
+                            <div class="news-badge">企业</div>
+                            <div class="news-actions">
+                                <button class="news-action-btn favorite-btn" data-id="6"><i data-lucide="heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <span class="news-category">产品更新</span>
+                            <h3>微软Copilot新增企业级自定义功能</h3>
+                            <p class="news-excerpt">企业现在可以训练专属的Copilot，深度集成内部知识库...</p>
+                            <div class="news-meta">
+                                <span><i data-lucide="clock"></i> 12小时前</span>
+                                <span><i data-lucide="eye"></i> 2.1k</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="loadMoreBtn">
+                        <i data-lucide="refresh-cw"></i> 加载更多
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- 右侧边栏 -->
+        <aside class="sidebar">
+            <!-- 热门文章TOP5 -->
+            <div class="sidebar-widget">
+                <h3><i data-lucide="flame"></i> 热门文章 TOP5</h3>
+                <ul class="top-list">
+                    <li class="top-item" data-id="101">
+                        <span class="top-rank">1</span>
+                        <a href="#">如何设计AI原生产品的用户体验</a>
+                        <span class="click-count">1.2k</span>
+                    </li>
+                    <li class="top-item" data-id="102">
+                        <span class="top-rank">2</span>
+                        <a href="#">2026年AI产品经理必备技能图谱</a>
+                        <span class="click-count">980</span>
+                    </li>
+                    <li class="top-item" data-id="103">
+                        <span class="top-rank">3</span>
+                        <a href="#">大模型API调用成本优化指南</a>
+                        <span class="click-count">850</span>
+                    </li>
+                    <li class="top-item" data-id="104">
+                        <span class="top-rank">4</span>
+                        <a href="#">AI Agent产品架构设计实战</a>
+                        <span class="click-count">720</span>
+                    </li>
+                    <li class="top-item" data-id="105">
+                        <span class="top-rank">5</span>
+                        <a href="#">从0到1构建AI对话系统</a>
+                        <span class="click-count">650</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 我的收藏 -->
+            <div class="sidebar-widget">
+                <h3><i data-lucide="bookmark"></i> 我的收藏</h3>
+                <div class="favorites-widget" id="favoritesWidget">
+                    <div class="favorites-empty">
+                        <i data-lucide="bookmark-off" style="width: 32px; height: 32px; margin-bottom: 8px;"></i>
+                        <p>暂无收藏内容</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 标签云 -->
+            <div class="sidebar-widget">
+                <h3><i data-lucide="tag"></i> 热门标签</h3>
+                <div class="tag-cloud">
+                    <a href="#" class="tag">大模型</a>
+                    <a href="#" class="tag">ChatGPT</a>
+                    <a href="#" class="tag">产品经理</a>
+                    <a href="#" class="tag">AI Agent</a>
+                    <a href="#" class="tag">多模态</a>
+                    <a href="#" class="tag">提示词</a>
+                    <a href="#" class="tag">RAG</a>
+                    <a href="#" class="tag">企业应用</a>
+                    <a href="#" class="tag">开发者工具</a>
+                    <a href="#" class="tag">自动驾驶</a>
+                    <a href="#" class="tag">AI绘画</a>
+                    <a href="#" class="tag">语音交互</a>
+                </div>
+            </div>
+
+            <!-- 订阅入口 -->
+            <div class="sidebar-widget subscribe-widget" id="subscribe">
+                <h3><i data-lucide="mail"></i> 订阅周刊</h3>
+                <p>每周推送精选AI资讯，不错过任何重要动态</p>
+                <form class="subscribe-form" id="subscribeForm">
+                    <input type="email" placeholder="输入你的邮箱" required>
+                    <button type="submit">订阅</button>
+                </form>
+                <p class="subscribe-note"><i data-lucide="shield-check"></i> 我们承诺不发送垃圾邮件</p>
+            </div>
+        </aside>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i data-lucide="bot"></i>
+                        <span>AI-Webclaw</span>
+                    </div>
+                    <p>专注AI行业资讯与产品洞察</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#news">AI新闻</a></li>
+                        <li><a href="#pm-section">产品经理</a></li>
+                        <li><a href="#">资源</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">投稿合作</a></li>
+                        <li><a href="#">商务联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="github"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI-Webclaw. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 详情弹窗 -->
+    <div class="modal-overlay" id="newsModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <div class="modal-header-image">
+                    <div class="news-placeholder" style="height: 100%;"><i data-lucide="cpu" style="width: 64px; height: 64px;"></i></div>
+                </div>
+                <span class="modal-badge" id="modalBadge">热门</span>
+            </div>
+            <div class="modal-content">
+                <div class="modal-category" id="modalCategory">行业动态</div>
+                <h2 class="modal-title" id="modalTitle">OpenAI发布新一代推理模型，编程能力大幅提升</h2>
+                <div class="modal-meta">
+                    <span><i data-lucide="calendar"></i> 2026-02-28</span>
+                    <span><i data-lucide="clock"></i> 2小时前</span>
+                    <span><i data-lucide="eye"></i> 3.2k 阅读</span>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <p>OpenAI今日正式发布了新一代推理模型，该模型在代码生成、调试和优化方面的表现实现了质的飞跃。</p>
+                    <p>根据官方测试数据，新模型在LeetCode竞赛题目上的通过率提升了65%，在代码调试准确率上提升了80%。这意味着开发者可以更高效地完成复杂的编程任务，大幅减少调试时间。</p>
+                    <p>此外，新模型还支持更长的上下文窗口，最大支持128K token，可以同时处理多个文件的大型项目。这对于代码重构、架构分析等任务具有重要意义。</p>
+                    <p>企业用户方面，新模型提供了更强的安全控制和API管理功能，帮助企业更好地集成AI能力到现有工作流中。</p>
+                </div>
+                <div class="modal-actions">
+                    <button class="modal-btn modal-btn-primary" id="modalFavoriteBtn">
+                        <i data-lucide="heart"></i> 收藏文章
+                    </button>
+                    <button class="modal-btn modal-btn-outline">
+                        <i data-lucide="share-2"></i> 分享
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
